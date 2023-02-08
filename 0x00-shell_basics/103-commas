@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a -p | tr '\n' ',' | sed G 
+ls -a -p --format=comma
