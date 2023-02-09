@@ -1,2 +1,2 @@
-0	string SHCOOL this is a School data file
-!:mime text/School
+0	string	SHCOOL SchoolData
+!:mime School
