@@ -1,2 +1,3 @@
 #!/bin/bash
-chmod ugo+rx /*
+chmod -R u-x,g-x /*
+
