@@ -20,3 +20,4 @@
 * 18-letteronly : Display lines starting with a letter
 * 19-AZ : Replace two characters with another ones
 * 20-hiago : Remove letters from a string
+* 21-reverse : Reverse input
