@@ -4,3 +4,4 @@
 * 2-hellofile : Print password file content
 * 3-twofiles : Display two files contents
 * 4-lastlines : Display last 10 lines /etc/passwd
+* 5-firstlines : Display first 10 lines /etc/passwd
