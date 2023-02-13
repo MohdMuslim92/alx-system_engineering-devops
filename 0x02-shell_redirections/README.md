@@ -15,3 +15,4 @@
 * 13-unique : Take a list, sort it and remove duplicates
 * 14-findthatword : Display lines containing specific pattern
 * 15-countthatword : Counts the words of a certain pattetn
+* 16-whatsnext : Display 3 lines after specific pattern
