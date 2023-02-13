@@ -13,3 +13,4 @@
 * 11-directories : Count all sub directories in the current directory
 * aaaaaa12-newest_files : Display 10 newest files sorted by date
 * 13-unique : Take a list, sort it and remove duplicates
+* 14-findthatword : Display lines containing specific pattern
