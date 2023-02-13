@@ -16,3 +16,4 @@
 * 14-findthatword : Display lines containing specific pattern
 * 15-countthatword : Counts the words of a certain pattetn
 * 16-whatsnext : Display 3 lines after specific pattern
+* 17-hidethisword : Display lines do not contain a pattern
