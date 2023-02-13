@@ -18,3 +18,4 @@
 * 16-whatsnext : Display 3 lines after specific pattern
 * 17-hidethisword : Display lines do not contain a pattern
 * 18-letteronly : Display lines starting with a letter
+* 19-AZ : Replace two characters with another ones
