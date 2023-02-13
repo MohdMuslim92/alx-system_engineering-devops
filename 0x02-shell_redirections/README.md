@@ -11,3 +11,4 @@
 * 9-duplicate_last_line : Duplicate last line (line 4) in a file
 * 10-no_more_js : Delete all js files from current and sub directories
 * 11-directories : Count all sub directories in the current directory
+* aaaaaa12-newest_files : Display 10 newest files sorted by date
