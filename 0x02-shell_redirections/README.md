@@ -17,3 +17,4 @@
 * 15-countthatword : Counts the words of a certain pattetn
 * 16-whatsnext : Display 3 lines after specific pattern
 * 17-hidethisword : Display lines do not contain a pattern
+* 18-letteronly : Display lines starting with a letter
