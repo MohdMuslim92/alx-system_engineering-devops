@@ -1,2 +1,2 @@
 #!/bin/bash
-find $PATH -type d | wc -w
+find $PATH -type d -exec wc -w {} +
