@@ -1,2 +1,2 @@
 #!/bin/bash
-find . * -exec  ls -a -R -1 {} +
+find * -exec  ls -a -1 {} +
