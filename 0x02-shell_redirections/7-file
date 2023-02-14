@@ -1,3 +1,3 @@
 #!/bin/bash
-echo Best\ School > test/\\\*\\\\\'\"Best\ School\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*:\)
+echo "Best School" > test/\\\*\\\\\'\"Best\ School\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*:\)
 #\*\\'\''"Best School"\\*$\?\*\*\*\*\*:)
