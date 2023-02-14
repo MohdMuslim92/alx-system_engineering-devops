@@ -14,3 +14,4 @@
 * 11-binary_to_decimal : convert variable from base 2 to base 10
 * 13-print_float : round a float number to 2 decimal places
 * 100-decimal_to_hexadecimal : converts a number from base 10 to base 16
+* 101-rot13 : cipher text wit rot13
