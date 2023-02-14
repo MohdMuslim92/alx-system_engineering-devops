@@ -15,3 +15,4 @@
 * 13-print_float : round a float number to 2 decimal places
 * 100-decimal_to_hexadecimal : converts a number from base 10 to base 16
 * 101-rot13 : cipher text wit rot13
+* 102-odd : prints every other line (skip a line) from the input, starting with the first line
