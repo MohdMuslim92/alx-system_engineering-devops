@@ -8,3 +8,4 @@
 * 6-create_local_variable : set a local variable
 * 7-create_global_variable : set a global variable
 * 8-true_knowledge : printing result of addition
+* 9-divide_and_rule : devide two variables
