@@ -1,2 +1,2 @@
 #!/bin/bash
-find . *.gif -type f -exec ls -1 | sed -e 's/\.gif$//'
+find . *.gif -type f -exec ls -a -1 | sed -e 's/\.gif$//'
