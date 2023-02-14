@@ -7,3 +7,4 @@
 * 5-local_variables :lists all local variables and environment variables, and functions
 * 6-create_local_variable : set a local variable
 * 7-create_global_variable : set a global variable
+* 8-true_knowledge : printing result of addition
