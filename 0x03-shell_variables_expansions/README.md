@@ -10,3 +10,4 @@
 * 8-true_knowledge : printing result of addition
 * 9-divide_and_rule : devide two variables
 * 10-love_exponent_breath : power number number x
+* 11-binary_to_decimal : convert variable from base 2 to base 10
