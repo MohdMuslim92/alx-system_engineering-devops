@@ -9,3 +9,4 @@
 * 7-create_global_variable : set a global variable
 * 8-true_knowledge : printing result of addition
 * 9-divide_and_rule : devide two variables
+* 10-love_exponent_breath : power number number x
