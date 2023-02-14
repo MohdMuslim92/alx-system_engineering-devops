@@ -21,3 +21,4 @@
 * 19-AZ : Replace two characters with another ones
 * 20-hiago : Remove letters from a string
 * 21-reverse : Reverse input
+* 22-users_and_homes : Display users and their home directories
