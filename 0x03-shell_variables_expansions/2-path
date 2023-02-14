@@ -1,2 +1,2 @@
 #!/bin/bash
-PATH="cd -"
+PATH="cd -" | echo $PATH
