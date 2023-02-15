@@ -22,4 +22,4 @@
 * 20-hiago : Remove letters from a string
 * 21-reverse : Reverse input
 * 22-users_and_homes : Display users and their home directories
-* 100-empty_casks : Display all files and directories with sub directories
+* 100-empty_casks : Display all empty files and directories with sub directories
