@@ -23,3 +23,6 @@
 * 21-reverse : Reverse input
 * 22-users_and_homes : Display users and their home directories
 * 100-empty_casks : Display all empty files and directories with sub directories
+* 101-gifs :  lists all the gif files(name without extension) in the current directory and all its sub-directories sorted by bytes
+* 102-acrostic : script decodes acrostics that use the first letter of each line.
+* 103-the_biggest_fan : script parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
