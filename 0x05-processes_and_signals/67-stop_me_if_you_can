@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Bash script that stops 4-to_infinity_and_beyond process using pkill
+# Bash script that stops 7-highlander process using pkill
 
 pkill -f "7-highlander"
