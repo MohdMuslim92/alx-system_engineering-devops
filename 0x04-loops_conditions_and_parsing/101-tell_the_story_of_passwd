@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A Bash script that displays the content of the file /etc/passwd in a story manner.
+#+ It display all the fields of the file
+
+file="/etc/passwd"
+while IFS=: read -r username password uid gid gecos home shell
+do
+	echo "The user $username is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $password, more info about the user here: $gecos"
+done < "$file"
