@@ -8,7 +8,7 @@
 # Function to handle SIGTERM signal
 terminate()
 {
-  echo "I am invincible!!!"
+  echo "OK"
   exit 0
 }
 
@@ -16,6 +16,6 @@ terminate()
 trap terminate SIGTERM
 
 while true; do
-  echo "To infinity and beyond indefinitely"
+  echo "To infinity and beyond"
   sleep 2
 done
