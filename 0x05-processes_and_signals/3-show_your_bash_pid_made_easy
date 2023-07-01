@@ -7,7 +7,7 @@ for pid in $pids
 do
 	if [ -f "/proc/$pid/cmdline" ]
 	then
-		pid_name=$(tr -d '\0' < "/proc/$pid/cmdline")
+		pid_name=$(awk '/^Name:/ {print $2}' "/proc/$pid/status")
 		echo "$pid $pid_name"
 	fi
 done
