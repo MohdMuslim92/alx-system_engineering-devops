@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+# Bash script that manages 'manage_my_process'
+# When passing the argument start:
+#+ Starts manage_my_process
+#+ Creates a file containing its PID in /var/run/my_process.pid
+#+ Displays manage_my_process started
+# When passing the argument stop:
+#+ Stops manage_my_process
+#+ Deletes the file /var/run/my_process.pid
+#+ Displays manage_my_process stopped
+# When passing the argument restart
+#+ Stops manage_my_process
+#+ Deletes the file /var/run/my_process.pid
+#+ Starts manage_my_process
+#+ Creates a file containing its PID in /var/run/my_process.pid
+#+ Displays manage_my_process restarted
+# Displays Usage: manage_my_process {start|stop|restart} if any
+#+ Other argument or no argument is passed
+
+#!/usr/bin/env bash
+
+FILE="/var/run/my_process.pid"
+SCRIPT_NAME="manage_my_process"
+
+start()
+{
+	./"$SCRIPT_NAME" &
+	echo $! > "$FILE"
+	echo "$SCRIPT_NAME started"
+}
+
+stop()
+{
+	pid=$(cat "$FILE")
+	kill "$pid"
+	rm "$FILE"
+	echo "$SCRIPT_NAME stopped"
+}
+
+restart()
+{
+	stop
+	start
+	echo "$SCRIPT_NAME restarted"
+}
+
+usage()
+{
+	echo "Usage: $0 {start|stop|restart}"
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart)
+		restart
+		;;
+	*)
+		usage
+		;;
+esac
