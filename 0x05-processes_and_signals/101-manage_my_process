@@ -26,7 +26,6 @@ start()
 {
 	./"$SCRIPT_NAME" &
 	echo $! > "$FILE"
-	echo "$SCRIPT_NAME started"
 }
 
 stop()
@@ -34,30 +33,31 @@ stop()
 	pid=$(cat "$FILE")
 	kill "$pid"
 	rm "$FILE"
-	echo "$SCRIPT_NAME stopped"
 }
 
 restart()
 {
 	stop
 	start
-	echo "$SCRIPT_NAME restarted"
 }
 
 usage()
 {
-	echo "Usage: $0 {start|stop|restart}"
+	echo "Usage: manage_my_process {start|stop|restart}"
 }
 
 case "$1" in
 	start)
 		start
+		echo "$SCRIPT_NAME started"
 		;;
 	stop)
 		stop
+		echo "$SCRIPT_NAME stopped"
 		;;
 	restart)
 		restart
+		echo "$SCRIPT_NAME restarted"
 		;;
 	*)
 		usage
