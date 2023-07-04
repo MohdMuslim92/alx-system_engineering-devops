@@ -10,4 +10,4 @@
 # hbttttttn   (5)
 # hbtttttttn
 
-puts ARGV[0].scan((hbt{2,5}n)).join
+puts ARGV[0].scan(/\bhbt{2,5}n\b/).join
