@@ -1,18 +1,6 @@
 **Networking Basics
-This project covers various concepts and topics related to networking basics. It includes questions and tasks that will test your understanding of the OSI model, different types of networks, MAC and IP addresses, and UDP/TCP protocols. You will also work with ports and ICMP using Bash scripting.
+This project covers various concepts and topics related to networking basics. It includes questions and tasks that covers the OSI model, different types of networks, MAC and IP addresses, and UDP/TCP protocols.
 
-Directory Structure
-markdown
-Copy code
-alx-system_engineering-devops/
-└── 0x07-networking_basics/
-    ├── 0-OSI_model
-    ├── 1-types_of_network
-    ├── 2-MAC_and_IP_address
-    ├── 3-UDP_and_TCP
-    ├── 4-TCP_and_UDP_ports
-    ├── 5-is_the_host_on_the_network
-    └── README.md
 Tasks
 0. OSI model
 Questions:
@@ -66,7 +54,7 @@ Shows the PID and name of the program to which each socket belongs
 5. Is the host on the network
 Write a Bash script that pings an IP address passed as an argument.
 Usage
-Clone the GitHub repository: git clone https://github.com/your_username/alx-system_engineering-devops.git
+Clone the GitHub repository: git clone https://github.com/MohdMuslim92/alx-system_engineering-devops.git
 Navigate to the project folder: cd alx-system_engineering-devops/0x07-networking_basics
-Execute the scripts individually using Bash: bash script_name
+Execute the scripts individually using Bash: ./script_name
 Make sure to provide any requiredarguments as specified in the task descriptions.
