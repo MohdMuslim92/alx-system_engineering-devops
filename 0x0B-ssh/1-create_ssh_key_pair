@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This script creates an RSA key pair
+dir=$(dirname "$0")
 private_key="school"
 bits=4096
 passphrase="betty"
-ssh-keygen -t rsa -b $bits -f ~/.ssh/$private_key -N "$passphrase"
+ssh-keygen -t rsa -b $bits -f "$dir/$private_key" -N "$passphrase"
