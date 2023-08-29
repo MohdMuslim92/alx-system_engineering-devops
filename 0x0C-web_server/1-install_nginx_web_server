@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script install nginx on a server and return a page that contains the
+# string Hello World! when querying Nginx at its root / with a GET request
+# using curl
+
+apt-get update
+apt-get install -y nginx
+
+echo "Hello World!" > /var/www/html/index.html
+sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
+service nginx restart
