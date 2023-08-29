@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script Docker container with Apache and fix the Apache issue
 container_id=$(docker run -p 8080:80 -d -it holbertonschool/265-0)
-docker exec -it $container_id /bin/bash -c "service apache2 start"
+docker exec -it "$container_id" /bin/bash -c "service apache2 start"
 
