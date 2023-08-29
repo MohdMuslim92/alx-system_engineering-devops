@@ -1,4 +1,4 @@
-HostName 100.26.170.218
+HostName 54.172.179.45
 User ubuntu
 IdentityFile ~/.ssh/school
 PreferredAuthentications publickey
