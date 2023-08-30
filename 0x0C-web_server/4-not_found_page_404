@@ -3,8 +3,8 @@
 # This script configures Nginx for custom 404 page
 
 # Install nginx
-#apt-get update
-#apt-get install -y nginx
+apt-get update
+apt-get install -y nginx
 
 # Create a backup of the original default configuration
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
