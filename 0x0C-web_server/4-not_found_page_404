@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # This script configures Nginx for custom 404 page
 
 # Install nginx
