@@ -1,7 +1,8 @@
 #!/bin/bash
 # Create a custom configuration file to add the custom header
-apt-get update
-apt-get install -y nginx
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.html
 sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
 SERVER=\
@@ -44,4 +45,4 @@ echo "Ceci n'est pas une page" > /var/www/html/404.html
 echo "$config" > /etc/nginx/sites-available/default
 
 echo "add_header X-Served-By \$hostname;" > /etc/nginx/conf.d/custom_header.conf
-service nginx restart
+sudo service nginx restart
