@@ -1,0 +1,6 @@
+#!/bin/bash
+# Create a custom configuration file to add the custom header
+apt-get update
+apt-get install -y nginx
+echo "add_header X-Served-By \$hostname;" > /etc/nginx/conf.d/custom_header.conf
+service nginx restart
