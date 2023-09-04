@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Create a custom configuration file to add the custom header
 # shellcheck disable=SC2154
 
