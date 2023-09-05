@@ -5,6 +5,7 @@ sudo apt-get install -y haproxy
 
 # Make a backup file for the default configuration
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bak
+sudo chown  $USER:$USER /etc/haproxy/haproxy.cfg
 
 # Create a new HAProxy configuration file
 echo "
