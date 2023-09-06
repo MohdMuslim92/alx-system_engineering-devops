@@ -5,4 +5,3 @@
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 sudo systemctl start nginx
 sudo systemctl restart nginx
->>>>>>> parent of b066e05... Update 0-nginx_likes_port_80
