@@ -3,4 +3,5 @@
 
 # Create a symbolic link from the Nginx configuration file
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+sudo systemctl start nginx
 sudo systemctl restart nginx
