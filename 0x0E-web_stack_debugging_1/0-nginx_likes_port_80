@@ -2,4 +2,4 @@
 # Bash script to configure Nginx to listen on port 80
 
 # Create a symbolic link from the Nginx configuration file
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
