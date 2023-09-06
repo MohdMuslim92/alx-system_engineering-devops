@@ -15,17 +15,16 @@ apt-get -y install curl
 nginx_conf="/etc/nginx/sites-available/default"
 backup_conf="$nginx_conf.backup"
 echo "Creating a backup of the Nginx configuration..."
-cp "$nginx_conf" "$backup_conf"
+sudo cp "$nginx_conf" "$backup_conf"
 
-rm /etc/nginx/sites-available/*
-rm /etc/nginx/sites-enabled/*~
+sudo rm /etc/nginx/sites-available/*
+sudo rm /etc/nginx/sites-enabled/*~
 # Configure Nginx to listen on port 80
 echo "Updating Nginx configuration to listen on port 80..."
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 
 # Restart Nginx
 echo "Restarting Nginx..."
 sudo service nginx restart
 
 echo "Nginx is now listening on port 80."
-
