@@ -1,12 +1,3 @@
 #!/usr/bin/env bash
 # Bash script to configure Nginx to listen on port 80
-
-# Install nginx
-apt-get update
-apt-get -y install nginx
-
-# Create a symbolic link from the Nginx configuration file
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
-
-sudo systemctl start nginx
-sudo systemctl restart nginx
