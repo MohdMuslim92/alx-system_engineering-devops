@@ -27,7 +27,7 @@ fi
 
 # Restart Nginx
 echo "Restarting Nginx..."
-service nginx restart
+sudo service nginx restart
 
 echo "Nginx is now listening on port 80."
 
