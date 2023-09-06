@@ -8,6 +8,17 @@ if ! command -v nginx &> /dev/null; then
     apt-get install -y nginx
 fi
 
+# Install curl
+apt-get -y install curl
+
+# Backup Nginx configuration
+nginx_conf="/etc/nginx/sites-available/default"
+backup_conf="$nginx_conf.backup"
+echo "Creating a backup of the Nginx configuration..."
+cp "$nginx_conf" "$backup_conf"
+
+rm /etc/nginx/sites-available/*
+rm /etc/nginx/sites-enabled/*~
 # Configure Nginx to listen on port 80
 if ! grep -q "listen *80;" /etc/nginx/sites-available/default; then
     echo "Updating Nginx configuration to listen on port 80..."
