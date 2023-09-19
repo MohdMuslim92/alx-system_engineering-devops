@@ -18,7 +18,7 @@ dump_file="backup.sql"
 mysqldump -u root -p"$1" --all-databases > "$dump_file"
 
 # Check if the dump was successful
-if [ $? -eq 0 ]; then
+if mysqldump -u root -p"$1" --all-databases > "$dump_file"; then
   # Compress the dump file into a tar.gz archive with the specified naming format
   tar -czvf "$backup_date.tar.gz" "$dump_file"
 
