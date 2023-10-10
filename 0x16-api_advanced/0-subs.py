@@ -4,6 +4,7 @@ Queries the Reddit API and returns the number of subscribers (not active users,
 total subscribers) for a given subreddit.
 """
 import requests
+import sys
 
 
 def number_of_subscribers(subreddit):
@@ -37,7 +38,6 @@ def number_of_subscribers(subreddit):
 
 if __name__ == '__main__':
     number_of_subscribers = __import__('0-subs').number_of_subscribers
-    import sys
 
     if len(sys.argv) < 2:
         print("Please pass an argument for the subreddit to search.")
